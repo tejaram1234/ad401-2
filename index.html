@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <ul>
+            <li id="blue">1st child</li>
+            <li class="lime">2nd child</li>
+            <li>3rd child</li>
+            <li class="lime">4th child</li>
+            <li>5th child</li>
+            <li class="lime">6th child</li>
+            <li>7th child</li>
+            <li class="lime">8th child</li>
+            <li id="green">9th child</li>
+            <li class="lime">10th child</li>
+            <li>11th child</li>
+            <li class="lime">12th child</li>
+            <li>13th child</li>
+            <li class="lime">14th child</li>
+            <li>15th child</li>
+            <li class="lime">16th child</li>
+            <li id="palevioletred">17th child</li>
+        </ul>
+        <button onclick="change()">change</button>
+    </div>
+    <script>
+        function change(){
+            var child1 = document.getElementById("blue")
+            child1.setAttribute("style", "background-color: blue")
+            child1.style.color="white"
+
+            var child9 = document.getElementById("green")
+            child9.setAttribute("style", "background-color: green")
+            child9.style.color="white"
+
+
+            var child17 = document.getElementById("palevioletred")
+            child17.setAttribute("style", "background-color: palevioletred")
+            child17.style.color="white"
+
+            var childeven = document.getElementsByClassName("lime")
+            for(let i=0; i<8; i++){
+                childeven[i].setAttribute("style", "background-color: lime")
+                childeven[i].style.color="white"
+            }
+        }
+    </script>
+</body>
+</html>
